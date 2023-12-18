@@ -42,6 +42,7 @@ public class Vehicle {
 
     public void steer(int direction) {
         this.currentDirection += direction;
+        if(this.currentDirection>=360) this.currentDirection -=360;
         System.out.println("steer method called - The direction is changed to: " + this.currentDirection + " degrees");
     }
 
